@@ -69,7 +69,7 @@ public class RadioTest {
     @Test
     public void shouldNextCurrentStation() {
         Radio service = new Radio();
-        service.nextCurrentStation();
+
         for (int a = 0; a <= 9; a++) {
 
             int currentStation = a;
@@ -86,7 +86,7 @@ public class RadioTest {
     @Test
     public void shouldPreviousCurrentStation() {
         Radio service = new Radio();
-        service.nextCurrentStation();
+        service.setCurrentStation(9);
         for (int c = 9; c >= 0; c--) {
 
             int currentStation = c;
