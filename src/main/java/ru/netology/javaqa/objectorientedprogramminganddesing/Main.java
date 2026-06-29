@@ -12,7 +12,7 @@ public class Main {
 
         int currentVolume =0;
 
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 0; i <= 100; i++) {
             if (i >= 100) {
                 currentVolume = 100;
             } else {
@@ -23,8 +23,8 @@ public class Main {
         }
 
         int currentDecreaseVolume;
-        for (int b = 100; b >= 1; b--) {
-            if (b < 1) {
+        for (int b = 100; b >= 0; b--) {
+            if (b < 0) {
                 currentVolume = 0;
             } else {
                 currentVolume = b;
@@ -33,10 +33,10 @@ public class Main {
             System.out.println("b = " + b);
         }
 
-        int currentStation;
+        int currentStation = 0;
         int nextCurrentStation;
 
-        for (int a = 1; a <= 9; a++) {
+        for (int a = 0; a <= 9; a++) {
             if (a > 9) {
                 currentStation = 0;
             } else {
@@ -48,8 +48,8 @@ public class Main {
 
         int previousCurrentStation;
 
-        for (int c = 9; c >= 1; c--) {
-            if (c < 1) {
+        for (int c = 9; c >= 0; c--) {
+            if (c < 0) {
                 currentStation = 9;
             } else {
                 currentStation = c;

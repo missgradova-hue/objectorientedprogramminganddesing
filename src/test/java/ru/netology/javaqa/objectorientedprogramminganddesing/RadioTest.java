@@ -7,31 +7,96 @@ public class RadioTest {
 
 
     @Test
-    public void shouldIncreaseVolume() {
-        RadioTest service = new RadioTest();
+    public void shouldSetVolume(){
+        Radio service = new Radio();
 
-        int currentVolume = 5;
-        int currentIncreaseVolume = 1;
-
-        for (int i = 1; i <= 100; i++) {
-            if (i > 100) {
-                currentVolume = 0;
-            } else {
-                currentVolume = i;
-            }
-
-            int expected = 6;
-            int actual = service(currentVolume, currentIncreaseVolume);
+        for (int i =0; i<=100; i++) {
+            int currentVolume = i;
+            int expected = currentVolume;
+            int actual = service.setVolume(currentVolume);
 
             Assertions.assertEquals(expected, actual);
-            // Ни чего не получается с тестом((.Наверное я зря затеяла учёбу.
-            //Подозреваю,что у меня тут полная ахинея.Что же будет дальше.
-            //Хочется до всего доходить самой.Ликование,если получается, а тут.....
-            //Помогите пожалуйста, ну что же я всё делаю не так.Надо догонять одногруппников.
+        }
+    }
+
+    @Test
+    public void shouldIncreaseVolume() {
+        Radio service = new Radio();
+        service.setVolume(0);
+        for (int i = 0; i <= 100; i++) {
+            int currentVolume = i;
+            int expected = currentVolume;
+            int actual = service.getCurrentVolume();
+
+            Assertions.assertEquals(expected, actual);
+
+            service.incVolume();
         }
 
     }
 
+    @Test
+    public void shouldDecVolume() {
+        Radio service = new Radio();
+        service.setVolume(100);
+        for (int i = 100; i >=1; i--) {
+            int currentVolume = i;
+            int expected = currentVolume;
+            int actual = service.getCurrentVolume();
+
+            Assertions.assertEquals(expected, actual);
+
+            service.decreaseVolume();
+        }
+
+    }
+
+    @Test
+    public void shouldCurrentStation() {
+        Radio service = new Radio();
+        service.setCurrentStation(9);
+        for (int a = 0; a <= 9; a++) {
+            int currentStation = a;
+            int expected = currentStation;
+            int actual = service.setCurrentStation(currentStation);
+
+            Assertions.assertEquals(expected, actual);
+
+        }
+
+    }
+
+    @Test
+    public void shouldNextCurrentStation() {
+        Radio service = new Radio();
+        service.nextCurrentStation();
+        for (int a = 0; a <= 9; a++) {
+
+            int currentStation = a;
+            int expected = currentStation;
+            int actual = service.getCurrentStation();
+
+            Assertions.assertEquals(expected, actual);
+
+            service.nextCurrentStation();
+        }
+    }
 
 
+    @Test
+    public void shouldPreviousCurrentStation() {
+        Radio service = new Radio();
+        service.nextCurrentStation();
+        for (int c = 9; c >= 0; c--) {
+
+            int currentStation = c;
+            int expected = currentStation;
+            int actual = service.getCurrentStation();
+
+            Assertions.assertEquals(expected, actual);
+
+            service.previousStation();
+        }
+    }
+    //Застряла.Последние два теста не проходят.Посмотрите пожалуйста,что не так.
 }
