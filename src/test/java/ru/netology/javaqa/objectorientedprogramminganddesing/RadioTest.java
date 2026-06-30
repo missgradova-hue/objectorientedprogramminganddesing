@@ -10,9 +10,16 @@ public class RadioTest {
     public void shouldSetVolume(){
         Radio service = new Radio();
 
-        for (int i =0; i<=100; i++) {
+        for (int i =-101; i<=101; i++) {
             int currentVolume = i;
             int expected = currentVolume;
+
+            if (expected > 100) {
+                expected = 100;
+            }
+            else if (expected<0){
+                expected = 0;
+            }
             int actual = service.setVolume(currentVolume);
 
             Assertions.assertEquals(expected, actual);
@@ -39,9 +46,12 @@ public class RadioTest {
     public void shouldDecVolume() {
         Radio service = new Radio();
         service.setVolume(100);
-        for (int i = 100; i >=1; i--) {
+        for (int i = 100; i >=-1; i--) {
             int currentVolume = i;
             int expected = currentVolume;
+            if (currentVolume < 0) {
+                expected = 0;
+            }
             int actual = service.getCurrentVolume();
 
             Assertions.assertEquals(expected, actual);
@@ -54,10 +64,17 @@ public class RadioTest {
     @Test
     public void shouldCurrentStation() {
         Radio service = new Radio();
-        service.setCurrentStation(9);
-        for (int a = 0; a <= 9; a++) {
+
+        for (int a = -10; a <= 10; a++) {
             int currentStation = a;
             int expected = currentStation;
+
+            if(currentStation <0){
+                expected = 9;
+            }else if (currentStation > 9){
+                expected = 0;
+            }
+
             int actual = service.setCurrentStation(currentStation);
 
             Assertions.assertEquals(expected, actual);
