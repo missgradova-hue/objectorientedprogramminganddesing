@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.165" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.228" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Users\PC\.jdks\ms-11.0.31\bin"/>
-    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire15433378398018672358\surefirebooter10685657068788725521.jar C:\Users\PC\AppData\Local\Temp\surefire15433378398018672358 2026-06-30T14-33-45_215-jvmRun1 surefire12132431787202722274tmp surefire_03979593817913474902tmp"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire1469419666045216451\surefirebooter10709364838726291403.jar C:\Users\PC\AppData\Local\Temp\surefire1469419666045216451 2026-06-30T21-04-56_079-jvmRun1 surefire15656042017708721185tmp surefire_06249736707270907063tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\PC\Desktop\myproject\objectorientedprogramminganddesing\target\test-classes;C:\Users\PC\Desktop\myproject\objectorientedprogramminganddesing\target\classes;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\PC\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\PC\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire15433378398018672358\surefirebooter10685657068788725521.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire1469419666045216451\surefirebooter10709364838726291403.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.31+11-LTS"/>
@@ -66,10 +66,10 @@
     <property name="maven.repo.local" value="C:\Users\PC\.m2\repository"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldNextCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.098"/>
-  <testcase name="shouldDecVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.006"/>
-  <testcase name="shouldPreviousCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.006"/>
-  <testcase name="shouldIncreaseVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.004"/>
-  <testcase name="shouldSetVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.002"/>
-  <testcase name="shouldCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.001"/>
+  <testcase name="shouldNextCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.131"/>
+  <testcase name="shouldDecVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0"/>
+  <testcase name="shouldPreviousCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.016"/>
+  <testcase name="shouldIncreaseVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0"/>
+  <testcase name="shouldSetVolume" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0"/>
+  <testcase name="shouldCurrentStation" classname="ru.netology.javaqa.objectorientedprogramminganddesing.RadioTest" time="0.002"/>
 </testsuite>
