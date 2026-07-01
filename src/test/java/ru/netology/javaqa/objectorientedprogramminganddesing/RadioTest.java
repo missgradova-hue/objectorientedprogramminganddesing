@@ -7,17 +7,16 @@ public class RadioTest {
 
 
     @Test
-    public void shouldSetVolume(){
+    public void shouldSetVolume() {
         Radio service = new Radio();
 
-        for (int i =-101; i<=101; i++) {
+        for (int i = -101; i <= 101; i++) {
             int currentVolume = i;
             int expected = currentVolume;
 
             if (expected > 100) {
                 expected = 100;
-            }
-            else if (expected<0){
+            } else if (expected < 0) {
                 expected = 0;
             }
             int actual = service.setVolume(currentVolume);
@@ -46,7 +45,7 @@ public class RadioTest {
     public void shouldDecVolume() {
         Radio service = new Radio();
         service.setVolume(100);
-        for (int i = 100; i >=-1; i--) {
+        for (int i = 100; i >= -1; i--) {
             int currentVolume = i;
             int expected = currentVolume;
             if (currentVolume < 0) {
@@ -69,9 +68,9 @@ public class RadioTest {
             int currentStation = a;
             int expected = currentStation;
 
-            if(currentStation <0){
+            if (currentStation < 0) {
                 expected = 9;
-            }else if (currentStation > 9){
+            } else if (currentStation > 9) {
                 expected = 0;
             }
 
