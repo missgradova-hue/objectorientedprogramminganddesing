@@ -2,8 +2,8 @@ package ru.netology.javaqa.objectorientedprogramminganddesing;
 
 public class Radio {
 
-    public int currentStation = 0;
-    public int currentVolume = 0;
+    private int currentStation = 0;
+    private int currentVolume = 0;
 
     public int getCurrentStation() {
         return currentStation;
